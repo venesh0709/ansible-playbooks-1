@@ -6,4 +6,4 @@
 
   tasks:
   - name: install package
-    yum: name={{ package_name }} state=present
+    yum: name="{{ package_name }}" state=present
