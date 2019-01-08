@@ -2,7 +2,7 @@
 - name: Install Package
   hosts: all
   vars: 
-    package_name: git
+    package_name: httpd
 
   tasks:
   - name: install package
