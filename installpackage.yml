@@ -1,9 +1,18 @@
 ---
-- name: Install Package
-  hosts: all
-  vars: 
-    package_name: httpd
+#- name: Install Package
+  #hosts: all
+ # vars: 
+   # package_name: httpd
 
+  #tasks:
+ # - name: install package
+#    yum: name="{{ package_name }}" state=present
+
+- name: Install Package
+  hosts: localhost
   tasks:
-  - name: install package
-    yum: name="{{ package_name }}" state=present
+  - name: Install Package
+    yum:
+      name: "{{ package_name }}"
+      state: latest
+    register: package
