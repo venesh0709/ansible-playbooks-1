@@ -1,6 +1,6 @@
 ---
 - name: Install Package
-  hosts: all
+  hosts: local
   vars: 
     package_name: httpd
 
